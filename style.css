@@ -1,13 +1,18 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&family=Fugaz+One&display=swap');
 body{
+    margin: 0;
+}
+
+*{
     margin: 0;
 }
 
 section{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    background-color: #dfdfdf;
 }
 
 .header{
@@ -46,19 +51,24 @@ section{
     font-size: 25px;
     color: #DF4B5A;
     cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.header .toggler .fas:hover{
+    color: #519992;
 }
 
 .menu{
-    transition: 0.5s linear all;
+    transition: 0.3s linear all;
     width: 0px;
     position: fixed;
     z-index: 9;
     margin-top: 10vh;
-    height: 90vh;
+    height: 90vh;   
 }
 
 .menu a{
-    transition: 0.5s linear all;
+    transition: 0.4s linear all;
     display: none;
     color: transparent;
     border: none;
@@ -74,7 +84,7 @@ section{
 }
 
 .menu.active{
-    transition: 0.5s linear all;
+    transition: 0.3s linear all;
     width: 100%;
     z-index: 9;
     height: 90vh;
@@ -86,7 +96,8 @@ section{
 }
 
 .menu.active a{
-    transition-delay: 0.5s;
+    margin: 25px;
+    transition-delay: 0.3s;
     transition: 0.5s linear all;
     display: flex;
     color: #DF4B5A;
@@ -98,6 +109,12 @@ section{
     justify-content: center;
     align-items: center;
     font-family: 'Exo 2', sans-serif;   
+}
+
+
+.menu.active a:hover{
+    border: 3px solid #519992;
+    color: #519992;
 }
 
 .header .logo img{
@@ -115,7 +132,7 @@ section{
     background-attachment: fixed;
     position: static;
     animation: anim 60s linear infinite;
-    transition: 0.5s linear;
+    transition: 0.3s linear;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,9 +151,27 @@ section{
 #home h2{
     margin: 0;
     font-size: 2em;
-    color: #DF4B5A;
+    color: #519992;
     font-family: 'Exo 2', sans-serif;
     padding: 10px;
+    margin-bottom: 25px;
+}
+
+#home h3 a{
+    border: 3px solid #DF4B5A;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin: 10px;
+    color: #DF4B5A;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s linear;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#home h3 a:hover{
+    border: 3px solid #519992;
+    color: #519992;
 }
 
 @keyframes anim {
@@ -154,4 +189,55 @@ section{
 
 .xd{
     animation-delay: 2s;
+}
+
+
+
+.dark{
+    background-color: #1e1e1e;
+}
+
+section .title{
+    width: 100%;
+    font-size: 2em;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e1e1e;
+    font-family: 'Exo 2', sans-serif; 
+}
+
+
+.dark .title{
+    width: 100%;
+    height: 10vh;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Exo 2', sans-serif; 
+}
+
+
+.line{
+    width: 100%;
+    height: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.line .ln{
+    display: block;
+    border-radius: 3px;
+    height: 8px;
+    width: 20%;
+    background-color: #DF4B5A;
+}
+
+.mgr{
+    width: 100%;
+    height: 10vh;
+    display: block;
 }
