@@ -128,6 +128,7 @@ section{
     color: #DF4B5A;
     font-family: 'Exo 2', sans-serif;
     word-spacing: 3px;
+    padding: 10px;
 }
 
 #home h2{
@@ -135,6 +136,7 @@ section{
     font-size: 2em;
     color: #DF4B5A;
     font-family: 'Exo 2', sans-serif;
+    padding: 10px;
 }
 
 @keyframes anim {
