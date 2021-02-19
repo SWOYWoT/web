@@ -199,7 +199,7 @@ section{
 
 section .title{
     width: 100%;
-    font-size: 2em;
+    font-size: 5vh;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -212,7 +212,7 @@ section .title{
 .dark .title{
     width: 100%;
     height: 10vh;
-    font-size: 2em;
+    font-size: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,3 +241,17 @@ section .title{
     height: 10vh;
     display: block;
 }
+
+@media screen and (max-width: 500px){
+    section .title{
+        font-size: 3vh;
+    }
+    .dark .title{
+        font-size: 3vh;
+    }
+
+    .header .toggler{
+        justify-content: flex-end;
+        padding: 7px;
+    }
+  }
