@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: #1e1e1e;
+    margin: 0px;
+    position: fixed;
+}
+
+.header .logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .logo.active{
+    transition: 0.5s linear;
+    display: none;
+}
+
+.header .toggler{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #DF4B5A;
+    z-index: 15;
+    
+}
+
+.header .toggler .fas{
+    font-size: 25px;
+    color: #DF4B5A;
+    cursor: pointer;
+}
+
+.menu{
+    transition: 0.5s linear all;
+    width: 0px;
+    position: fixed;
+    z-index: 9;
+    margin-top: 10vh;
+    height: 90vh;
+}
+
+.menu a{
+    transition: 0.5s linear all;
+    display: none;
+    color: transparent;
+    border: none;
+}
+
+
+.buttons{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu.active{
+    transition: 0.5s linear all;
+    width: 100%;
+    z-index: 9;
+    height: 90vh;
+    margin-top: 10vh;
+    display: block;
+    background-color: #2c2c2c;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu.active a{
+    transition-delay: 0.5s;
+    transition: 0.5s linear all;
+    display: flex;
+    color: #DF4B5A;
+    text-decoration: none;
+    width: 250px;
+    padding: 5px;
+    border: 3px solid #DF4B5A;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo img{
+    width: 150px;
+    cursor: pointer;
+    z-index: 10;
+}
