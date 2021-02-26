@@ -12,7 +12,7 @@ body{
 section{
     width: 100%;
     min-height: 100vh;
-    background-color: #dfdfdf;
+    background-color: #f3f0f0;
 }
 
 .header{
@@ -157,6 +157,8 @@ section{
     margin-bottom: 25px;
 }
 
+
+
 #home h3 a{
     border: 3px solid #DF4B5A;
     padding: 5px 15px;
@@ -194,7 +196,7 @@ section{
 
 
 .dark{
-    background-color: #1e1e1e;
+    background-color: #2c2c2c;
 }
 
 section .title{
@@ -254,4 +256,141 @@ section .title{
         justify-content: flex-end;
         padding: 7px;
     }
-  }
+
+    .benefits .content .block{
+        display: block;
+    }
+}
+
+
+#about{
+    min-height: 100vh;
+}
+
+#about .content{
+    margin-top: 7vh;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+#about .content .block{
+    width: 70%;
+    display: flex;
+}
+
+
+#about .content .block .text{
+    width: 55%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#about .content .block .text .bck{
+    width: 80%;
+}
+
+#about .content .block .crit{
+    margin-top: 4vh;
+    width: 45%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+
+#about .content .block .crit ul{
+    list-style: square outside;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+    background-color: #1e1e1e;
+}
+
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #DF4B5A);
+    border-radius: 10px;
+}   
+
+
+
+@media screen and (max-width: 735px){
+    #about .content .block{
+        display: block;
+    }
+
+    #about .content .block .text{
+        width: 100%;
+    }
+
+
+    #about .content .block .crit{
+        width: 100%;
+    }
+}
+
+
+.list{
+    display: block;
+}
+
+
+#benefits .content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#benefits .content .block{
+    min-height: 80vh;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+
+#benefits .content .block .card{
+    width: 300px;
+    height: 330px;
+    border: 4px solid #DF4B5A;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+#benefits .content .block .card .img{
+    padding: 10px;
+    font-size: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1000px){
+    #benefits .content{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    #benefits .content .block{
+        width: 300px;
+        display: block;
+    }
+
+    #benefits .content .block .card{
+        margin: 0;
+        margin-bottom: 35px;
+    }
+}
