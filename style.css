@@ -22,6 +22,7 @@ section{
     background-color: #1e1e1e;
     margin: 0px;
     position: fixed;
+    z-index: 999;
 }
 
 .header .logo{
@@ -409,5 +410,170 @@ body::-webkit-scrollbar-thumb {
     #benefits .content .block .card{
         margin: 0;
         margin-bottom: 35px;
+    }
+}
+
+#social .content{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#social .content .block{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#social .content .block .discord{
+    width: 400px;
+    height: 25vh;
+}
+
+#social .content .block .discord .icon{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 50px;
+    padding: 3px;
+    border: 4px solid #DF4B5A;
+    color: #DF4B5A;
+    background-color: #f3f0f0;
+}
+
+#social .content .block .discord .conte{
+    width: 80%;
+    min-height: 100%;
+    border: 4px solid #DF4B5A;
+    border-radius: 10px;
+    transform: translateX(32px) translateY(-8px);
+    z-index: -20;
+    padding: 7px;
+}
+
+#social .content .block .discord .conte .atte{
+    margin-top: 8px;
+}
+
+#social .content .block .discord .conte .buttone{
+    transform: skewX(-15deg);
+    margin-top: 8px;
+    width: 225px;
+    height: 50px;
+    background-color: #DF4B5A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+    margin-right: 15px;
+    transition: 0.3s linear;
+    float: right;
+}
+
+#social .content .block .discord .conte .buttone:hover{
+    background-color: #519992;
+}
+
+
+#social .content .block .discord .conte .buttone .join{
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+
+
+
+#social .content .block .telegram{
+    width: 400px;
+    height: 25vh;
+}
+
+#social .content .block .telegram .icon{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 50px;
+    padding: 3px;
+    border: 4px solid #519992;
+    color: #519992;
+    background-color: #f3f0f0;
+}
+
+#social .content .block .telegram .conte{
+    width: 80%;
+    min-height: 100%;
+    border: 4px solid #519992;
+    border-radius: 10px;
+    transform: translateX(32px) translateY(-8px);
+    z-index: -20;
+    padding: 7px;
+}
+
+#social .content .block .telegram .conte .atte{
+    margin-top: 8px;
+}
+
+#social .content .block .telegram .conte .buttone{
+    transform: skewX(-15deg);
+    margin-top: 8px;
+    width: 225px;
+    height: 50px;
+    background-color: #519992;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+    margin-right: 15px;
+    transition: 0.3s linear;
+    float: right;
+}
+
+#social .content .block .telegram .conte .buttone:hover{
+    background-color: #DF4B5A;
+}
+
+
+#social .content .block .telegram .conte .buttone .join{
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+
+@media screen and (max-width: 1200px){
+    #social .content .block{
+        width: 405px;
+        display: block;
+        margin-bottom: 75px;
+    }
+
+    #social .content .block .telegram{
+        margin-top: 110px;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    #social .content .block{
+        width: 350px;
+        margin-bottom: 75px;
+    }
+    #social .content .block .discord{
+        width: 350px;
+    }
+    #social .content .block .telegram{
+        width: 350px;
+    }
+
+    #social .content .block .telegram .conte .buttone{
+        margin-top: 7px;
     }
 }
