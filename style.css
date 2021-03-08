@@ -103,7 +103,7 @@ section{
     display: flex;
     color: #DF4B5A;
     text-decoration: none;
-    width: 250px;
+    width: 290px;
     padding: 5px;
     border: 3px solid #DF4B5A;
     border-radius: 7px;
@@ -577,3 +577,89 @@ body::-webkit-scrollbar-thumb {
         margin-top: 7px;
     }
 }
+
+#leaderbord, .leaderbord{
+    display: none;
+}
+
+
+
+#personal .content{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#personal .content .block{
+    min-height: 80vh;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+
+#personal .content .block .carda{
+    width: 300px;
+    height: 360px;
+    border: 4px solid #DF4B5A;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+#personal .content .block .carda .top{
+    font-size: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+#personal .content .block .carda .top img{
+    padding: 30px;
+    width: 225px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    
+}
+
+
+#personal .content .block .carda .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Exo 2', sans-serif; 
+    color: #DF4B5A;
+}
+
+#personal .content .block .carda .text2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Exo 2', sans-serif; 
+    color: #519992;
+}
+
+
+@media screen and (max-width: 1000px){
+    #personal .content{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    #personal .content .block{
+        width: 300px;
+        display: block;
+    }
+
+    #personal .content .block .carda{
+        margin: 0;
+        margin-bottom: 35px;
+    }
+}
+
+
