@@ -670,24 +670,6 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-
-
-
-@media screen and (max-width: 735px){
-    #rules .content .block{
-        display: block;
-    }
-
-    #rules .content .block .text{
-        width: 100%;
-    }
-
-
-    #rules .content .block .crit{
-        width: 100%;
-    }
-}
-
 #rules{
     min-height: 100vh;
 }
@@ -732,8 +714,28 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     margin-bottom: 4vh;
+    margin-top: 0;
 }
 
 #rules .content .block .crit ul{
     list-style: square outside;
 }
+
+
+@media screen and (max-width: 735px){
+    #rules .content .block{
+        display: block;
+    }
+
+    #rules .content .block .text{
+        width: 100%;
+
+    }
+
+
+    #rules .content .block .crit{
+        margin-top: 65px;
+        width: 100%;
+    }
+}
+
